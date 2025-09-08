@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+         <div class="scroll-container">
+        <div class="scroll-track">
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+            <img src="image4.jpg" alt="Image 4">
+            <img src="image5.jpg" alt="Image 5">
+            <img src="image6.jpg" alt="Image 6">
+            <img src="image7.jpg" alt="Image 7">
+            <img src="image8.jpg" alt="Image 8">
+            <img src="image9.jpg" alt="Image 9">
+            <img src="image10.jpg" alt="Image 10">
+            <img src="image11.jpg" alt="Image 11">
+            <img src="image12.jpg" alt="Image 12">
+            <img src="image13.jpg" alt="Image 13">
+            <img src="image14.jpg" alt="Image 14">
+            <img src="image15.jpg" alt="Image 15">
+            <img src="image16.jpg" alt="Image 16">
+            <img src="image17.jpg" alt="Image 17">
+            <img src="image18.jpg" alt="Image 18">
+            <img src="image19.jpg" alt="Image 19">
+            <!-- Repeat images for seamless effect -->
+            <img src="image1.jpg" alt="Image 1">
+            <img src="Image2.JPG" alt="Image 2">
+            <img src="Image3.jpg" alt="Image 3">
+            <img src="Image4.jpg" alt="Image 4">
+            <img src="Image5.jpg" alt="Image 5">
+            <img src="Image6.jpg" alt="Image 6">
+            <img src="Image7.jpg" alt="Image 7">
+            <img src="image8.jpg" alt="Image 8">
+            <img src="image9.jpg" alt="Image 9">
+            <img src="image10.jpg" alt="Image 10">
+            <img src="image11.jpg" alt="Image 11">
+            <img src="image12.jpg" alt="Image 12">
+            <img src="image13.jpg" alt="Image 13">
+            <img src="image14.jpg" alt="Image 14">
+            <img src="image15.jpg" alt="Image 15">
+            <img src="image16.jpg" alt="Image 16">
+            <img src="image17.jpg" alt="Image 17">
+            <img src="image18.jpg" alt="Image 18">
+            <img src="image19.jpg" alt="Image 19">
+        </div>
+    </div>
+        <div id="main">
+            <div id="content">
+                <div id="info-box-full">
+                    <h2>Happy Anniversary Love!</h2>
+                    <p>Today marks the first of many other landmarks in our relationship. While it has only been a month officially, it feels as though i've experienced you for longer. Our relationship is something i've come to grow grateful for, our romance is something that has been healing to heart if anything. Your humor, your smile and bravado among many other things i admire about you, continue to make me grateful i've taken this journey with you. i can only hope that it can continue to grow, and us along with it.</p>
+                    <button class="button-press" id="loveButton">Click For a Suprise!</button>
+                </div>
+            </div>
+        </div>
+        <script>
+        // Function to generate hearts when the "Love" button is clicked
+        document.getElementById('loveButton').addEventListener('click', function() {
+            for (let i = 0; i < 20; i++) { // Create 20 hearts
+                const heart = document.createElement('span');
+                heart.textContent = '❤️';
+                heart.classList.add('heart');
+                // Set a random position at the bottom
+                heart.style.left = `${Math.random() * window.innerWidth}px`;
+                heart.style.bottom = '0px';  // Position hearts at the bottom
+                heart.style.animationDelay = `${Math.random() * 2}s`;
+                document.body.appendChild(heart);
+                
+                // Remove the heart element after the animation ends
+                setTimeout(() => {
+                    heart.remove();
+                }, 3000);
+            }
+        });
+    </script>
+    </body>
+</html>
