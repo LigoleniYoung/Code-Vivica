@@ -30,6 +30,7 @@ body {
         #info-box-full h2{
             text-align: center;
             font-family: monospace;
+            text-size: x-large;
         }
 
         #info-box-full p{
@@ -37,6 +38,7 @@ body {
             margin-top: 30px;
             margin-left: 20px;
             margin-right: 20px;
+            text-size: large;
             font-family: monospace bold;
         }
 
@@ -135,3 +137,4 @@ body {
                 opacity: 0;
             }
         }
+
